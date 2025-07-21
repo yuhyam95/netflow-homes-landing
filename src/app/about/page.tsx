@@ -18,10 +18,10 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div className="space-y-6">
             <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">
-              About VerdantBuild
+              About Nationwide Housing
             </h1>
             <p className="text-lg text-muted-foreground">
-              Founded on the principles of quality, integrity, and sustainability, VerdantBuild has grown from a small local builder into a leading construction firm recognized for its commitment to excellence.
+              Founded on the principles of quality, integrity, and sustainability, Nationwide Housing has grown from a small local builder into a leading construction firm recognized for its commitment to excellence.
             </p>
             <h2 className="font-headline text-2xl font-semibold">Our Story</h2>
             <p className="text-muted-foreground">

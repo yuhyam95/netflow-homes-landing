@@ -18,7 +18,7 @@ const fontHeadline = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "VerdantBuild",
+  title: "Nationwide Housing",
   description: "Professional construction services for residential and commercial projects.",
 };
 

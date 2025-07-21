@@ -1,12 +1,13 @@
 "use client";
 
-import { HardHat, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { cn } from "@/lib/utils";
+import Logo from "./Logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -39,8 +40,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold">
-          <HardHat className="h-6 w-6 text-primary" />
-          <span className="font-headline text-lg">VerdantBuild</span>
+          <Logo className="h-10" />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -58,8 +58,7 @@ export default function Header() {
             <div className="flex h-full flex-col">
               <div className="border-b p-4">
                 <Link href="/" className="flex items-center gap-2 font-bold">
-                   <HardHat className="h-6 w-6 text-primary" />
-                   <span className="font-headline text-lg">VerdantBuild</span>
+                   <Logo className="h-10" />
                 </Link>
               </div>
               <nav className="flex flex-grow flex-col gap-4 p-4">

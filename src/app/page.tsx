@@ -90,7 +90,7 @@ export default function HomePage() {
             Building Your Vision
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
-            VerdantBuild brings your architectural dreams to life with precision, passion, and professionalism.
+            Nationwide Housing brings your architectural dreams to life with precision, passion, and professionalism.
           </p>
           <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">Get a Quote</Link>
@@ -151,9 +151,9 @@ export default function HomePage() {
             />
           </div>
           <div>
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">Why Choose VerdantBuild?</h2>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">Why Choose Us?</h2>
             <p className="mt-4 text-muted-foreground">
-              With over 20 years of experience, VerdantBuild is a trusted name in the construction industry. Our commitment to quality, sustainability, and client satisfaction sets us apart. We use the latest technology and eco-friendly materials to create structures that are not only beautiful but also built to last.
+              With over 20 years of experience, Nationwide Housing is a trusted name in the construction industry. Our commitment to quality, sustainability, and client satisfaction sets us apart. We use the latest technology and eco-friendly materials to create structures that are not only beautiful but also built to last.
             </p>
             <Button asChild size="lg" className="mt-8">
               <Link href="/about">Learn More About Us</Link>

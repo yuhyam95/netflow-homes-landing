@@ -11,7 +11,7 @@ export default function BlogPage() {
       <div className="text-center">
         <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">Company Blog</h1>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Insights, news, and stories from the VerdantBuild team. Stay updated on our latest projects and industry trends.
+          Insights, news, and stories from the Nationwide Housing team. Stay updated on our latest projects and industry trends.
         </p>
       </div>
 
