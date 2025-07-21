@@ -191,7 +191,7 @@ export default function HomePage() {
             }}>
             <CarouselContent className="-ml-4">
               {featuredProjects.map((project) => (
-                <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={project.id} className="pl-4 md:basis-1/2">
                   <Card className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
                     <div className="relative">
                       <div className="aspect-[4/3] w-full">
