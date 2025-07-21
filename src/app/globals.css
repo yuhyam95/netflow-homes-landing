@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 0 0% 93.3%;
-    --foreground: 224 71.4% 4.1%;
+    --background: 0 0% 98%;
+    --foreground: 224 71.4% 10.1%;
     --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card-foreground: 224 71.4% 10.1%;
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
+    --popover-foreground: 224 71.4% 10.1%;
     --primary: 120 61% 34%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 210 20% 96.1%;
-    --secondary-foreground: 224 71.4% 4.1%;
-    --muted: 210 20% 96.1%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 224 71.4% 10.1%;
+    --muted: 210 20% 98%;
+    --muted-foreground: 215 20.2% 75.1%;
     --accent: 80 58% 34%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 20.2% 65.1%;
-    --input: 215 20.2% 65.1%;
+    --border: 215 20.2% 85.1%;
+    --input: 215 20.2% 85.1%;
     --ring: 120 61% 34%;
     --radius: 0.5rem;
     --chart-1: 12 76% 61%;
@@ -40,24 +40,24 @@
   }
 
   .dark {
-    --background: 222 47% 11%;
+    --background: 222 47% 15%;
     --foreground: 210 40% 98%;
-    --card: 222 47% 11%;
+    --card: 222 47% 15%;
     --card-foreground: 210 40% 98%;
-    --popover: 222 47% 11%;
+    --popover: 222 47% 15%;
     --popover-foreground: 210 40% 98%;
     --primary: 120 61% 40%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 217 33% 17%;
+    --secondary: 217 33% 22%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 217 33% 22%;
+    --muted-foreground: 215 20% 70%;
     --accent: 80 58% 40%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
+    --border: 217 33% 27%;
+    --input: 217 33% 27%;
     --ring: 120 61% 40%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
