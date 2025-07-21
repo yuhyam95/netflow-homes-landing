@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Building2, Home as HomeIcon, Wrench, Target, Eye, Gem } from "lucide-react";
+import { Building2, Home as HomeIcon, Wrench, Target, Eye, Gem, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -15,19 +15,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const services = [
   {
-    icon: <HomeIcon className="mb-4 h-12 w-12 text-primary" />,
+    icon: <HomeIcon className="h-10 w-10 text-primary-foreground" />,
     title: "Residential Construction",
     description: "Building custom homes with quality craftsmanship and attention to detail, tailored to your lifestyle.",
     link: "#",
   },
   {
-    icon: <Building2 className="mb-4 h-12 w-12 text-primary" />,
+    icon: <Building2 className="h-10 w-10 text-primary-foreground" />,
     title: "Commercial Projects",
     description: "Expert solutions for commercial buildings, from office spaces to retail centers, delivered on time and on budget.",
     link: "#",
   },
   {
-    icon: <Wrench className="mb-4 h-12 w-12 text-primary" />,
+    icon: <Wrench className="h-10 w-10 text-primary-foreground" />,
     title: "Renovations & Remodeling",
     description: "Transforming existing spaces with modern designs and functional upgrades for homes and businesses.",
     link: "#",
@@ -122,16 +122,28 @@ export default function HomePage() {
               We offer a comprehensive range of construction services to meet the diverse needs of our clients.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-24 md:grid-cols-3">
             {services.map((service, index) => (
-              <Card key={index} className="flex flex-col items-center text-center shadow-lg transition-transform hover:scale-105">
-                <CardHeader>
+              <Card key={index} className="relative border bg-background pt-16 shadow-lg">
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 rounded-lg bg-accent p-6 shadow-md">
                   {service.icon}
-                  <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
+                </div>
+                <span className="absolute right-4 top-4 font-headline text-8xl font-bold text-muted/40">
+                  0{index + 1}
+                </span>
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>
+                <CardFooter>
+                  <Button asChild variant="link" className="text-accent hover:text-accent/80">
+                    <Link href={service.link}>
+                      Read More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardFooter>
               </Card>
             ))}
           </div>
