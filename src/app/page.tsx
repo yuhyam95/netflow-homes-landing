@@ -122,23 +122,25 @@ export default function HomePage() {
               We offer a comprehensive range of construction services to meet the diverse needs of our clients.
             </p>
           </div>
-          <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-24 md:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
             {services.map((service, index) => (
-              <Card key={index} className="relative border bg-background pt-16 shadow-lg">
-                <div className="absolute -top-12 left-1/2 -translate-x-1/2 rounded-lg bg-accent p-6 shadow-md">
-                  {service.icon}
-                </div>
-                <span className="absolute right-4 top-4 font-headline text-8xl font-bold text-muted/40">
-                  0{index + 1}
-                </span>
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
+              <Card key={index} className="relative border bg-background shadow-lg overflow-hidden">
+                <CardHeader className="p-6 flex flex-row items-start gap-4">
+                  <div className="rounded-lg bg-accent p-4 shadow-md">
+                    {service.icon}
+                  </div>
+                   <div>
+                    <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
+                   </div>
+                   <span className="absolute -right-4 -top-4 font-headline text-8xl font-bold text-muted/20 -z-0">
+                      0{index + 1}
+                    </span>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="p-6 pt-0">
                   <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>
-                <CardFooter>
-                  <Button asChild variant="link" className="text-accent hover:text-accent/80">
+                <CardFooter className="p-6 pt-0">
+                  <Button asChild variant="link" className="text-accent hover:text-accent/80 p-0">
                     <Link href={service.link}>
                       Read More <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
