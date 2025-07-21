@@ -2,34 +2,54 @@ export const projects = [
   {
     id: 1,
     title: "Modern Lakeside Residence",
-    description: "A stunning example of modern architecture, this custom-built home features expansive glass walls, natural wood accents, and a seamless connection to the surrounding landscape. Our team managed the project from conception to completion, ensuring every detail was executed to the highest standard.",
+    description: "A stunning example of modern architecture, this custom-built home features expansive glass walls, natural wood accents, and a seamless connection to the surrounding landscape.",
     images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "modern residence"
+    hint: "modern residence",
+    location: "Lakeview, USA",
+    price: "From $1.2M",
+    client: "The Miller Family",
+    year: "2023",
+    duration: "18 Months"
   },
   {
     id: 2,
     title: "Downtown Office Tower",
-    description: "This commercial project involved the construction of a 20-story office building in the heart of the city. We implemented innovative, sustainable technologies to achieve a LEED Platinum certification, creating a landmark of green building in the urban core.",
+    description: "This commercial project involved the construction of a 20-story office building in the heart of the city. We implemented innovative, sustainable technologies to achieve a LEED Platinum certification.",
     images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "office tower"
+    hint: "office tower",
+    location: "Metropolis, USA",
+    price: "$35M",
+    client: "Innovate Corp.",
+    year: "2022",
+    duration: "3 Years"
   },
   {
     id: 3,
     title: "Historic Farmhouse Renovation",
-    description: "We meticulously restored and expanded a 19th-century farmhouse, preserving its historic charm while integrating modern amenities. The project included structural repairs, a new kitchen and bathrooms, and a seamless rear addition for family living.",
+    description: "We meticulously restored and expanded a 19th-century farmhouse, preserving its historic charm while integrating modern amenities for family living.",
     images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "historic farmhouse"
+    hint: "historic farmhouse",
+    location: "Willow Creek, USA",
+    price: "From $850k",
+    client: "The Garcia Family",
+    year: "2023",
+    duration: "14 Months"
   },
    {
     id: 4,
     title: "Retail Complex 'The Grove'",
-    description: "A multi-unit retail complex designed to foster community and commerce. The project featured unique storefronts, pedestrian-friendly walkways, and extensive landscaping to create an inviting shopping experience.",
+    description: "A multi-unit retail complex designed to foster community and commerce, featuring unique storefronts and pedestrian-friendly walkways.",
     images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "retail complex"
+    hint: "retail complex",
+    location: "Oakwood, USA",
+    price: "$12.5M",
+    client: "Commerce Group",
+    year: "2021",
+    duration: "2.5 Years"
   },
 ];
 
-export const featuredProjects = projects.slice(0, 2);
+export const featuredProjects = projects.slice(0, 3);
 
 export const blogPosts = [
   {

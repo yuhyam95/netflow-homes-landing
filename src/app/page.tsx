@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Building2, Home as HomeIcon, Wrench, Target, Eye, Gem, ArrowRight } from "lucide-react";
+import { Building2, Home as HomeIcon, Wrench, Target, Eye, Gem, ArrowRight, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -176,7 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="projects" className="w-full bg-card py-16 md:py-24">
+      <section id="projects" className="w-full bg-muted/40 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Featured Projects</h2>
@@ -184,39 +184,63 @@ export default function HomePage() {
               A glimpse into our portfolio of successfully completed projects.
             </p>
           </div>
-          <Carousel className="mx-auto mt-12 w-full max-w-4xl"
+          <Carousel className="mx-auto mt-12 w-full max-w-6xl"
             opts={{
               align: "start",
               loop: true,
             }}>
-            <CarouselContent>
+            <CarouselContent className="-ml-4">
               {featuredProjects.map((project) => (
-                <CarouselItem key={project.id}>
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <Image
-                        src={project.images[0]}
-                        alt={project.title}
-                        width={1200}
-                        height={675}
-                        className="h-full w-full object-cover"
-                         data-ai-hint={project.hint}
-                      />
-                      <div className="p-6">
-                        <h3 className="font-headline text-xl font-bold">{project.title}</h3>
-                        <p className="mt-2 text-muted-foreground">{project.description}</p>
+                <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
+                    <div className="relative">
+                      <div className="aspect-[4/3] w-full">
+                        <Image
+                          src={project.images[0]}
+                          alt={project.title}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={project.hint}
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                      <div className="absolute bottom-0 left-0 p-6 text-primary-foreground">
+                        <h3 className="font-headline text-2xl font-bold">{project.title}</h3>
+                        <p className="text-sm">{project.description.split(',')[0]}</p>
+                        <div className="mt-4 flex items-center gap-2 rounded-full bg-black/30 px-3 py-1 text-xs backdrop-blur-sm">
+                          <MapPin className="h-4 w-4" />
+                          <span>{project.location}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <CardContent className="grid grid-cols-2 gap-4 p-6 flex-grow">
+                      <div className="rounded-lg bg-muted p-3 text-center">
+                        <p className="text-xs text-muted-foreground">Price</p>
+                        <p className="font-semibold">{project.price}</p>
+                      </div>
+                      <div className="rounded-lg bg-muted p-3 text-center">
+                        <p className="text-xs text-muted-foreground">Client</p>
+                        <p className="font-semibold">{project.client}</p>
+                      </div>
+                      <div className="rounded-lg bg-muted p-3 text-center">
+                        <p className="text-xs text-muted-foreground">Project Year</p>
+                        <p className="font-semibold">{project.year}</p>
+                      </div>
+                      <div className="rounded-lg bg-muted p-3 text-center">
+                        <p className="text-xs text-muted-foreground">Duration</p>
+                        <p className="font-semibold">{project.duration}</p>
                       </div>
                     </CardContent>
                   </Card>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-[-50px]" />
+            <CarouselNext className="right-[-50px]" />
           </Carousel>
            <div className="mt-8 text-center">
             <Button asChild size="lg" variant="outline">
-              <Link href="/projects">View Full Projects</Link>
+              <Link href="/projects">View All Projects</Link>
             </Button>
           </div>
         </div>
