@@ -1,4 +1,4 @@
-export const portfolio = [
+export const projects = [
   {
     id: 1,
     title: "Modern Lakeside Residence",
@@ -29,7 +29,7 @@ export const portfolio = [
   },
 ];
 
-export const featuredProjects = portfolio.slice(0, 2);
+export const featuredProjects = projects.slice(0, 2);
 
 export const blogPosts = [
   {

@@ -128,7 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="portfolio" className="w-full bg-card py-16 md:py-24">
+      <section id="projects" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Featured Projects</h2>
@@ -168,7 +168,7 @@ export default function HomePage() {
           </Carousel>
            <div className="mt-8 text-center">
             <Button asChild size="lg" variant="outline">
-              <Link href="/portfolio">View Full Portfolio</Link>
+              <Link href="/projects">View Full Projects</Link>
             </Button>
           </div>
         </div>
