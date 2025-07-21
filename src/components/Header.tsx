@@ -24,7 +24,7 @@ export default function Header() {
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors rounded-md px-3 py-2",
+        "text-sm font-medium uppercase tracking-wider transition-colors rounded-md px-3 py-2",
         pathname === href
           ? "bg-primary text-primary-foreground"
           : "text-foreground hover:bg-muted"
@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold">
           <HardHat className="h-6 w-6 text-primary" />
           <span className="font-headline text-lg">VerdantBuild</span>
