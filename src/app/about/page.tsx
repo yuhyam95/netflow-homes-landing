@@ -1,28 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
-
-const teamMembers = [
-  {
-    name: "John Carter",
-    role: "Founder & CEO",
-    image: "https://placehold.co/100x100",
-    hint: "male portrait"
-  },
-  {
-    name: "Jane Miller",
-    role: "Lead Architect",
-    image: "https://placehold.co/100x100",
-    hint: "female portrait"
-  },
-  {
-    name: "David Chen",
-    role: "Project Manager",
-    image: "https://placehold.co/100x100",
-    hint: "male portrait professional"
-  },
-];
 
 const values = [
   "Quality Craftsmanship",
@@ -76,31 +54,6 @@ export default function AboutPage() {
                 <CheckCircle className="h-6 w-6 flex-shrink-0 text-primary" />
                 <span className="font-medium">{value}</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">Meet Our Team</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
-            The dedicated professionals behind our success.
-          </p>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {teamMembers.map((member) => (
-              <Card key={member.name} className="text-center">
-                <CardHeader>
-                  <Avatar className="mx-auto h-24 w-24">
-                    <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.hint} />
-                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="font-headline text-xl">{member.name}</CardTitle>
-                  <p className="text-primary">{member.role}</p>
-                </CardContent>
-              </Card>
             ))}
           </div>
         </div>
