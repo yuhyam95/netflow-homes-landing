@@ -1,3 +1,38 @@
+import { Building2, Home as HomeIcon, Wrench } from "lucide-react";
+
+export const services = [
+  {
+    icon: HomeIcon,
+    title: "Residential Construction",
+    description: "Building custom homes with quality craftsmanship and attention to detail, tailored to your lifestyle.",
+    link: "/services",
+    image: "https://placehold.co/600x400",
+    hint: "residential construction",
+    fullDescription: "Our residential construction service focuses on creating beautiful, functional, and sustainable custom homes. We work closely with clients from the initial design phase to the final touches, ensuring every aspect of the home reflects their vision and lifestyle. Our team uses high-quality materials and innovative building techniques to deliver homes that are not only aesthetically pleasing but also durable and energy-efficient.",
+    features: ["Custom Home Design", "New Builds", "Luxury Residences", "Energy-Efficient Solutions", "Quality Materials", "Personalized Service"]
+  },
+  {
+    icon: Building2,
+    title: "Commercial Projects",
+    description: "Expert solutions for commercial buildings, from office spaces to retail centers, delivered on time and on budget.",
+    link: "/services",
+    image: "https://placehold.co/600x400",
+    hint: "commercial building",
+    fullDescription: "We provide comprehensive construction services for a wide range of commercial projects, including office buildings, retail spaces, and industrial facilities. Our team has the expertise to manage projects of all sizes, ensuring they are completed on time, within budget, and to the highest standards of quality. We focus on creating spaces that are functional, sustainable, and meet the specific needs of your business.",
+    features: ["Office Buildings", "Retail Centers", "Industrial Facilities", "Project Management", "LEED Certification", "Tenant Improvements"]
+  },
+  {
+    icon: Wrench,
+    title: "Renovations & Remodeling",
+    description: "Transforming existing spaces with modern designs and functional upgrades for homes and businesses.",
+    link: "/services",
+    image: "https://placehold.co/600x400",
+    hint: "home renovation kitchen",
+    fullDescription: "Our renovation and remodeling services are designed to breathe new life into existing spaces. Whether you're looking to update a single room, undertake a whole-home renovation, or remodel a commercial property, our team has the skills and experience to deliver exceptional results. We combine modern design principles with quality craftsmanship to create spaces that are both beautiful and functional.",
+    features: ["Kitchen & Bath Remodels", "Home Additions", "Historic Restorations", "Basement Finishing", "Exterior Facelifts", "Commercial Remodeling"]
+  },
+];
+
 export const projects = [
   {
     id: 1,
@@ -50,36 +85,3 @@ export const projects = [
 ];
 
 export const featuredProjects = projects.slice(0, 3);
-
-export const blogPosts = [
-  {
-    slug: "choosing-the-right-materials",
-    title: "Sustainable Choices: Choosing the Right Materials for Your Project",
-    author: "Jane Doe",
-    date: "2024-05-15",
-    excerpt: "Learn how sustainable materials can enhance your construction project's value and reduce its environmental impact.",
-    content: "When embarking on a new construction project, the choice of materials is one of the most critical decisions you'll make. It affects not only the aesthetic and structural integrity of the building but also its environmental footprint and long-term operating costs. At VerdantBuild, we prioritize sustainability, and this guide will help you understand the benefits of choosing eco-friendly materials...",
-    image: "https://placehold.co/800x450",
-    hint: "building materials",
-  },
-  {
-    slug: "5-key-considerations",
-    title: "5 Key Considerations for Your Next Home Renovation",
-    author: "John Smith",
-    date: "2024-04-22",
-    excerpt: "Planning a renovation? Here are five essential factors to consider to ensure a smooth and successful project.",
-    content: "A home renovation can be an exciting venture, but it requires careful planning to avoid common pitfalls. Whether you're updating a kitchen, adding a new room, or overhauling your entire house, these five key considerations will help you navigate the process from start to finish. We'll cover budgeting, timelines, hiring contractors, and more to help your project succeed...",
-    image: "https://placehold.co/800x450",
-    hint: "home renovation"
-  },
-  {
-    slug: "the-future-of-commercial-construction",
-    title: "The Future of Commercial Construction: Trends to Watch",
-    author: "Emily White",
-    date: "2024-03-10",
-    excerpt: "Explore the latest trends shaping the commercial construction industry, from smart buildings to modular construction.",
-    content: "The commercial construction landscape is constantly evolving, driven by technological advancements, changing work patterns, and a growing emphasis on sustainability. In this post, we'll explore the key trends that are set to define the future of the industry. From the rise of smart buildings equipped with IoT devices to the efficiency of modular and prefabricated construction methods, discover what's next for commercial projects...",
-    image: "https://placehold.co/800x450",
-    hint: "commercial construction"
-  }
-];

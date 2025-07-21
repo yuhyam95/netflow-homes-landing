@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Building2, Home as HomeIcon, Wrench, Target, Eye, Gem, ArrowRight, MapPin } from "lucide-react";
+import { Target, Eye, Gem, ArrowRight, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -10,29 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { featuredProjects } from "@/lib/data";
+import { featuredProjects, services } from "@/lib/data";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
-const services = [
-  {
-    icon: <HomeIcon className="h-10 w-10 text-primary-foreground" />,
-    title: "Residential Construction",
-    description: "Building custom homes with quality craftsmanship and attention to detail, tailored to your lifestyle.",
-    link: "#",
-  },
-  {
-    icon: <Building2 className="h-10 w-10 text-primary-foreground" />,
-    title: "Commercial Projects",
-    description: "Expert solutions for commercial buildings, from office spaces to retail centers, delivered on time and on budget.",
-    link: "#",
-  },
-  {
-    icon: <Wrench className="h-10 w-10 text-primary-foreground" />,
-    title: "Renovations & Remodeling",
-    description: "Transforming existing spaces with modern designs and functional upgrades for homes and businesses.",
-    link: "#",
-  },
-];
 
 const teamMembers = [
   {
@@ -123,31 +102,34 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {services.map((service, index) => (
-              <Card key={index} className="relative border bg-background shadow-lg overflow-hidden">
-                <CardHeader className="p-6 flex flex-row items-start gap-4">
-                  <div className="rounded-lg bg-accent p-4 shadow-md">
-                    {service.icon}
-                  </div>
-                   <div>
-                    <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
-                   </div>
-                   <span className="absolute -right-4 -top-4 font-headline text-8xl font-bold text-muted/20 -z-0">
-                      0{index + 1}
-                    </span>
-                </CardHeader>
-                <CardContent className="p-6 pt-0">
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-                <CardFooter className="p-6 pt-0">
-                  <Button asChild variant="link" className="text-accent hover:text-accent/80 p-0">
-                    <Link href={service.link}>
-                      Read More <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <Card key={index} className="relative border bg-background shadow-lg overflow-hidden">
+                  <CardHeader className="p-6 flex flex-row items-start gap-4">
+                    <div className="rounded-lg bg-accent p-4 shadow-md">
+                      <Icon className="h-10 w-10 text-primary-foreground" />
+                    </div>
+                     <div>
+                      <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
+                     </div>
+                     <span className="absolute -right-4 -top-4 font-headline text-8xl font-bold text-muted/20 -z-0">
+                        0{index + 1}
+                      </span>
+                  </CardHeader>
+                  <CardContent className="p-6 pt-0">
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                  <CardFooter className="p-6 pt-0">
+                    <Button asChild variant="link" className="text-accent hover:text-accent/80 p-0">
+                      <Link href={service.link}>
+                        Read More <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
