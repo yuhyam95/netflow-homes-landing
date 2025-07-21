@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Building2, Home as HomeIcon, Wrench } from "lucide-react";
+import { Building2, Home as HomeIcon, Wrench, Target, Eye, Gem } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -55,6 +55,24 @@ const teamMembers = [
   },
 ];
 
+const corePrinciples = [
+  {
+    icon: <Target className="h-10 w-10 text-primary" />,
+    title: "Our Mission",
+    description: "To build lasting relationships by providing superior construction services, delivering projects on time and within budget to the highest standards of quality and safety.",
+  },
+  {
+    icon: <Eye className="h-10 w-10 text-primary" />,
+    title: "Our Vision",
+    description: "To be the leading construction firm recognized for innovation, sustainability, and creating structures that enhance communities for generations to come.",
+  },
+  {
+    icon: <Gem className="h-10 w-10 text-primary" />,
+    title: "Our Values",
+    description: "We are committed to quality craftsmanship, a client-centric approach, integrity, sustainable practices, safety, and embracing innovation in all we do.",
+  },
+];
+
 export default function HomePage() {
   return (
     <div className="flex flex-col">
@@ -77,6 +95,22 @@ export default function HomePage() {
           <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">Get a Quote</Link>
           </Button>
+        </div>
+      </section>
+
+      <section id="principles" className="w-full bg-background py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {corePrinciples.map((principle) => (
+              <div key={principle.title} className="flex items-start gap-6">
+                <div className="flex-shrink-0">{principle.icon}</div>
+                <div>
+                  <h3 className="font-headline text-xl font-bold">{principle.title}</h3>
+                  <p className="mt-2 text-muted-foreground">{principle.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
