@@ -48,12 +48,12 @@ const missionVision = [
 ];
 
 const values = [
-    "Quality Craftsmanship",
+    "Integrity",
+    "Innovation",
+    "Professionalism",
+    "Excellence",
     "Client-Centric Approach",
-    "Integrity and Honesty",
-    "Sustainable Practices",
-    "Safety First",
-    "Innovation and Technology"
+    "Safety First"
 ];
 
 
