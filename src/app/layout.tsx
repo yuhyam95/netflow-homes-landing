@@ -18,7 +18,7 @@ const fontHeadline = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "Nationwide Housing",
+  title: "NETFLOW Smart Homes Ltd",
   description: "Professional construction services for residential and commercial projects.",
 };
 

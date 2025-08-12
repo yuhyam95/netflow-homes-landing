@@ -8,7 +8,7 @@ export default function Logo({ className }: { className?: string }) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="h-full w-auto"
-        aria-label="Nationwide Housing Development Company Limited Logo"
+        aria-label="NETFLOW Smart Homes Ltd Logo"
       >
         <g>
           <path
@@ -24,10 +24,10 @@ export default function Logo({ className }: { className?: string }) {
       <div className="flex flex-col font-headline text-[#3c4043]">
         <span className="text-xs">RC 1337038</span>
         <span className="text-base font-bold leading-tight tracking-tighter">
-          NATIONWIDE HOUSING
+          NETFLOW
         </span>
         <span className="text-base font-bold leading-tight tracking-tighter">
-          DEVELOPMENT COMPANY LIMITED
+          SMART HOMES LTD
         </span>
       </div>
     </div>

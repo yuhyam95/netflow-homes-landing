@@ -15,20 +15,20 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const teamMembers = [
   {
-    name: "John Carter",
+    name: "Abdullahi Ahmed Isa",
     role: "Founder & CEO",
     image: "https://placehold.co/100x100",
     hint: "male portrait"
   },
   {
-    name: "Jane Miller",
-    role: "Lead Architect",
+    name: "Arc. Mustapha Abubakar mnia mcarch",
+    role: "Chief Architect/Project Manager",
     image: "https://placehold.co/100x100",
     hint: "female portrait"
   },
   {
-    name: "David Chen",
-    role: "Project Manager",
+    name: "Sanni Inuwa Baba",
+    role: "Head, Digital Marketing and Corporate Communication",
     image: "https://placehold.co/100x100",
     hint: "male portrait professional"
   },
@@ -38,12 +38,12 @@ const corePrinciples = [
   {
     icon: <Target className="h-10 w-10 text-primary" />,
     title: "Our Mission",
-    description: "To build lasting relationships by providing superior construction services, delivering projects on time and within budget to the highest standards of quality and safety.",
+    description: "Our mission at NETFLOW SMART HOMES is to deliver exceptional services to our client Though our team of experienced professionals who process the necessary capacity and expertise required to get the job done. We strive to achieve this by delivering high-quality projects, fostering a culture of excellence and upholding the highest standard of professionalism..",
   },
   {
     icon: <Eye className="h-10 w-10 text-primary" />,
     title: "Our Vision",
-    description: "To be the leading construction firm recognized for innovation, sustainability, and creating structures that enhance communities for generations to come.",
+    description: "To be the most reliable and eﬃcient construction company for clients in Nigeria and beyond, recognized for our quality services and commitment to excellence.",
   },
   {
     icon: <Gem className="h-10 w-10 text-primary" />,
@@ -69,7 +69,7 @@ export default function HomePage() {
             Building Your Vision
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
-            Nationwide Housing brings your architectural dreams to life with precision, passion, and professionalism.
+            NETFLOW Smart Homes brings your architectural dreams to life with precision, passion, and professionalism.
           </p>
           <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">Get a Quote</Link>
@@ -149,7 +149,7 @@ export default function HomePage() {
           <div>
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why Choose Us?</h2>
             <p className="mt-4 text-muted-foreground">
-              With over 20 years of experience, Nationwide Housing is a trusted name in the construction industry. Our commitment to quality, sustainability, and client satisfaction sets us apart. We use the latest technology and eco-friendly materials to create structures that are not only beautiful but also built to last.
+              With over 20 years of experience, NETFLOW Smart Homes is a trusted name in the construction industry. Our commitment to quality, sustainability, and client satisfaction sets us apart. We use the latest technology and eco-friendly materials to create structures that are not only beautiful but also built to last.
             </p>
             <Button asChild size="lg" className="mt-8">
               <Link href="/about">Learn More About Us</Link>

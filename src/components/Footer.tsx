@@ -9,7 +9,7 @@ export default function Footer() {
            <Logo className="h-12" />
         </div>
         <p className="text-sm text-muted-foreground text-center">
-          © {new Date().getFullYear()} Nationwide Housing Development Company Limited. All rights reserved.
+          © {new Date().getFullYear()} NETFLOW Smart Homes Ltd. All rights reserved.
         </p>
         <div className="flex gap-4">
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
