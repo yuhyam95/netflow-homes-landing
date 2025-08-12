@@ -90,7 +90,6 @@ export default function HomePage() {
                  <div className="flex-shrink-0"><Gem className="h-10 w-10 text-primary" /></div>
                  <div>
                     <h3 className="font-headline text-xl font-bold">Our Values</h3>
-                    <p className="mt-2 text-muted-foreground">We are committed to quality craftsmanship, a client-centric approach, integrity, sustainable practices, safety, and embracing innovation in all we do.</p>
                  </div>
               </div>
                <div className="mt-8 grid grid-cols-2 gap-4">
