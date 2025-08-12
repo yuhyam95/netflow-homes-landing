@@ -60,7 +60,7 @@ const values = [
 export default function HomePage() {
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] min-h-[400px] w-full">
+      <section className="relative h-[80vh] min-h-[600px] w-full">
         <Image
           src="https://placehold.co/1920x1080"
           alt="Modern house exterior"
