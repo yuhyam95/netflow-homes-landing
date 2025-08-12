@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Target, Eye, Gem, ArrowRight, MapPin } from "lucide-react";
+import { Target, Eye, Gem, ArrowRight, MapPin, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -34,23 +34,28 @@ const teamMembers = [
   },
 ];
 
-const corePrinciples = [
-  {
-    icon: <Target className="h-10 w-10 text-primary" />,
-    title: "Our Mission",
-    description: "Our mission at NETFLOW SMART HOMES is to deliver exceptional services to our client Though our team of experienced professionals who process the necessary capacity and expertise required to get the job done. We strive to achieve this by delivering high-quality projects, fostering a culture of excellence and upholding the highest standard of professionalism..",
-  },
-  {
-    icon: <Eye className="h-10 w-10 text-primary" />,
-    title: "Our Vision",
-    description: "To be the most reliable and eﬃcient construction company for clients in Nigeria and beyond, recognized for our quality services and commitment to excellence.",
-  },
-  {
-    icon: <Gem className="h-10 w-10 text-primary" />,
-    title: "Our Values",
-    description: "We are committed to quality craftsmanship, a client-centric approach, integrity, sustainable practices, safety, and embracing innovation in all we do.",
-  },
+const missionVision = [
+    {
+        icon: <Target className="h-10 w-10 text-primary" />,
+        title: "Our Mission",
+        description: "Our mission at NETFLOW SMART HOMES is to deliver exceptional services to our client Though our team of experienced professionals who process the necessary capacity and expertise required to get the job done. We strive to achieve this by delivering high-quality projects, fostering a culture of excellence and upholding the highest standard of professionalism..",
+    },
+    {
+        icon: <Eye className="h-10 w-10 text-primary" />,
+        title: "Our Vision",
+        description: "To be the most reliable and eﬃcient construction company for clients in Nigeria and beyond, recognized for our quality services and commitment to excellence.",
+    },
 ];
+
+const values = [
+    "Quality Craftsmanship",
+    "Client-Centric Approach",
+    "Integrity and Honesty",
+    "Sustainable Practices",
+    "Safety First",
+    "Innovation and Technology"
+];
+
 
 export default function HomePage() {
   return (
@@ -79,16 +84,35 @@ export default function HomePage() {
 
       <section id="principles" className="w-full bg-background py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {corePrinciples.map((principle) => (
-              <div key={principle.title} className="flex items-start gap-6">
-                <div className="flex-shrink-0">{principle.icon}</div>
-                <div>
-                  <h3 className="font-headline text-xl font-bold">{principle.title}</h3>
-                  <p className="mt-2 text-muted-foreground">{principle.description}</p>
-                </div>
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <div className="flex items-start gap-6">
+                 <div className="flex-shrink-0"><Gem className="h-10 w-10 text-primary" /></div>
+                 <div>
+                    <h3 className="font-headline text-xl font-bold">Our Values</h3>
+                    <p className="mt-2 text-muted-foreground">We are committed to quality craftsmanship, a client-centric approach, integrity, sustainable practices, safety, and embracing innovation in all we do.</p>
+                 </div>
               </div>
-            ))}
+               <div className="mt-8 grid grid-cols-2 gap-4">
+                {values.map((value, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                    <span className="text-sm font-medium text-muted-foreground">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-8">
+              {missionVision.map((item) => (
+                <div key={item.title} className="flex items-start gap-6">
+                  <div className="flex-shrink-0">{item.icon}</div>
+                  <div>
+                    <h3 className="font-headline text-xl font-bold">{item.title}</h3>
+                    <p className="mt-2 text-muted-foreground">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
