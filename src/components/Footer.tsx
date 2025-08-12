@@ -12,12 +12,7 @@ export default function Footer() {
           © {new Date().getFullYear()} NETFLOW Smart Homes Ltd. All rights reserved.
         </p>
         <div className="flex gap-4">
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-            Terms of Service
-          </Link>
+          
         </div>
       </div>
     </footer>

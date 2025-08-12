@@ -22,7 +22,6 @@ export default function Logo({ className }: { className?: string }) {
         </g>
       </svg>
       <div className="flex flex-col font-headline text-[#3c4043]">
-        <span className="text-xs">RC 1337038</span>
         <span className="text-base font-bold leading-tight tracking-tighter">
           NETFLOW
         </span>
