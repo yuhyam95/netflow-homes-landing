@@ -34,14 +34,20 @@ export default function AboutPage() {
               About NETFLOW Smart Homes Ltd
             </h1>
             <p className="text-lg text-muted-foreground">
-              Founded on the principles of quality, integrity, and sustainability, NETFLOW Smart Homes Ltd has grown from a small local builder into a leading construction firm recognized for its commitment to excellence.
+              NETFLOW SMART HOME LTD is a Real Estate Company positioned to fully utilize the modern-day construction technique in a smart way and also taking full advantage of the many opportunities to achieve a cliental goal. NETFLOW SMART HOME LTD Incorporated in August 2022, it is an Indigenous Real Estate firm that fully represent a new generation in a smart way.
             </p>
-            <h2 className="font-headline text-2xl font-semibold">Our Story</h2>
+            <h2 className="font-headline text-2xl font-semibold">Who We Are</h2>
             <p className="text-muted-foreground">
-              For over two decades, we have been transforming visions into reality. Our journey began with a passion for building and a single goal: to deliver exceptional results that exceed our clients' expectations. Today, we continue to uphold that promise on every project, big or small.
+              We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery with eﬀective and eﬃcient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extend to private, corporate, and government agencies.
             </p>
              <p className="text-muted-foreground">
-              We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery in an effective and efficient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extends to private, corporate, and government agencies. Our management expertise is supported by state-of-the-art information systems that interface to provide accurate estimating, sound and efficient project management with an effective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to ensure their successful completion.
+              Our management expertise is supported by state of the art information system that interface to provide accurate estimating sound and eﬃcient project management with eﬀective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to the successful completion.
+            </p>
+             <p className="text-muted-foreground">
+              Of equal importance to our staﬀ, our state of the art technology and our track records is our fundamental integrity. We believe that our competitive advantage result from the mutual trust and respect that we share with our employees and clients. Eﬀective team work significantly and positively aﬀect our ability to deliver a quality project on time within budget.
+            </p>
+             <p className="text-muted-foreground">
+              NETFLOW SMART HOME has established competence in delivering quality projects both in and outside Abuja. The company's core areas of expertise include construction, project management, facilitating management, investment, property marketing and advisory.
             </p>
           </div>
           <div>
