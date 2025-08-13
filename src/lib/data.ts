@@ -1,12 +1,15 @@
 import { Building, ClipboardList, TrendingUp, Warehouse } from "lucide-react";
-
+import heroImage from "../../public/hero.jpg";
+   import teamMeetingImage from "../../public/team-meeting.jpg";
+   import propertyInvestmentImage from "../../public/property-investment.jpg";
+   import constructionManagementImage from "../../public/construction-management.jpg";
 export const services = [
   {
     icon: Building,
     title: "Construction",
     description: "High-quality construction services for residential and commercial properties, ensuring durability and excellence.",
     link: "/services",
-    image: "https://placehold.co/600x400",
+    image: heroImage,
     hint: "construction site",
     fullDescription: "Our construction operation comprises all types of build environment. This includes the most complex projects such as tall buildings as well as a large number of mid-size projects and small projects such as private homes. In addition to our construction services, we contribute with our specialized expertise, for example withing design build. We target client in both private and public sectors.",
     features: ["New Builds", "Renovations", "Structural Engineering", "Quality Materials", "Safety Compliance", "On-Time Delivery"]
@@ -16,7 +19,7 @@ export const services = [
     title: "Project Management",
     description: "Expert project management to ensure your construction project is completed on time, within budget, and to the highest standards.",
     link: "/services",
-    image: "https://placehold.co/600x400",
+    image: teamMeetingImage,
     hint: "blueprints planning",
     fullDescription: "Project management ties together in all activities on a project. A project mya be well conceived and adequately financed, the contract may be carefully drown-up, the contractors and workers highly experienced. But if all aspect of the project is not expertly integrated and managed, it may overrun the budget, fail to meet the schedule or fall short in technical quality.",
     features: ["Budget Management", "Timeline Planning", "Contractor Coordination", "Risk Assessment", "Quality Control", "Client Reporting"]
@@ -26,7 +29,7 @@ export const services = [
     title: "Facility Management",
     description: "Comprehensive facility management services to maintain and optimize your properties for long-term value.",
     link: "/services",
-    image: "https://placehold.co/600x400",
+    image: constructionManagementImage,
     hint: "modern building maintenance",
     fullDescription: "Our focus is to manage your facility so that you can concentrate on you own core business/ professional activities while we help prolong the lifespan and functionality of your existing structure/property. Facility management is curtailed in the maintenance and some total renovation of a building. It is a strategy that seeks to minimize infrastructure cost in the long run because it lessens the depreciation rate of a building. Moreover, it preserves the intrinsic and extrinsic value of a given infrastructure. At NETFLOW SMART HOMES LTD, we strive to provide professional and eﬃcient services, tailored to respond to the individual needs of our clients. We are providing a high-quality facilities management including cleaning services, property rent/ lease both public and private properties.",
     features: ["Preventative Maintenance", "Asset Management", "Operational Support", "Safety & Compliance", "Vendor Management", "Tenant Support"]
@@ -36,7 +39,7 @@ export const services = [
     title: "Property Investment",
     description: "Strategic property investment advice and opportunities to help you build and grow your real estate portfolio.",
     link: "/services",
-    image: "https://placehold.co/600x400",
+    image: propertyInvestmentImage,
     hint: "real estate investment",
     fullDescription: "It involves the purchase, management and sales or retail of real estate for profit. In NETFLOW SMART HOME we have various investing options and advisors to make investment profitable particularly in the real estate. Investment properties are often purchased from a variety of sources including market listing, real estate brokers, Banks and Government entities and sale properties to make valuable profit. NETFLOW SMART HOME will help an investor to make a market analysis before selling oﬀ to obtain profit.",
     features: ["Market Analysis", "Portfolio Strategy", "Property Sourcing", "Due Diligence", "Financial Modeling", "Acquisition Support"]

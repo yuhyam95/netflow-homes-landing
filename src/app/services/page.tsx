@@ -24,7 +24,7 @@ export default function ServicesPage() {
                     src={service.image}
                     alt={service.title}
                     width={600}
-                    height={400}
+                    height={600}
                     className="w-full rounded-lg object-cover shadow-xl"
                     data-ai-hint={service.hint}
                   />
