@@ -28,7 +28,7 @@ export const services = [
     link: "/services",
     image: "https://placehold.co/600x400",
     hint: "modern building maintenance",
-    fullDescription: "We offer a full suite of facility management services to ensure your properties operate efficiently and are well-maintained. From routine maintenance to emergency repairs and long-term strategic planning, our team protects your investment and enhances its value. We customize our services to meet the unique needs of each property.",
+    fullDescription: "Our focus is to manage your facility so that you can concentrate on you own core business/ professional activities while we help prolong the lifespan and functionality of your existing structure/property. Facility management is curtailed in the maintenance and some total renovation of a building. It is a strategy that seeks to minimize infrastructure cost in the long run because it lessens the depreciation rate of a building. Moreover, it preserves the intrinsic and extrinsic value of a given infrastructure. At NETFLOW SMART HOMES LTD, we strive to provide professional and eﬃcient services, tailored to respond to the individual needs of our clients. We are providing a high-quality facilities management including cleaning services, property rent/ lease both public and private properties.",
     features: ["Preventative Maintenance", "Asset Management", "Operational Support", "Safety & Compliance", "Vendor Management", "Tenant Support"]
   },
   {
