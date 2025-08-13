@@ -8,7 +8,7 @@ export const services = [
     link: "/services",
     image: "https://placehold.co/600x400",
     hint: "construction site",
-    fullDescription: "We provide top-tier construction services for a wide range of projects, from residential homes to large-scale commercial buildings. Our experienced team is committed to delivering quality craftsmanship, on-time completion, and exceptional value. We handle all aspects of the construction process, ensuring a seamless experience from start to finish.",
+    fullDescription: "Our construction operation comprises all types of build environment. This includes the most complex projects such as tall buildings as well as a large number of mid-size projects and small projects such as private homes. In addition to our construction services, we contribute with our specialized expertise, for example withing design build. We target client in both private and public sectors.",
     features: ["New Builds", "Renovations", "Structural Engineering", "Quality Materials", "Safety Compliance", "On-Time Delivery"]
   },
   {
