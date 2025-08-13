@@ -18,7 +18,7 @@ export const services = [
     link: "/services",
     image: "https://placehold.co/600x400",
     hint: "blueprints planning",
-    fullDescription: "Our project management services provide end-to-end oversight for your construction projects. We manage timelines, budgets, contractors, and all other details to ensure a smooth and successful outcome. Our proactive approach minimizes risks and keeps you informed every step of the way.",
+    fullDescription: "Project management ties together in all activities on a project. A project mya be well conceived and adequately financed, the contract may be carefully drown-up, the contractors and workers highly experienced. But if all aspect of the project is not expertly integrated and managed, it may overrun the budget, fail to meet the schedule or fall short in technical quality.",
     features: ["Budget Management", "Timeline Planning", "Contractor Coordination", "Risk Assessment", "Quality Control", "Client Reporting"]
   },
   {
