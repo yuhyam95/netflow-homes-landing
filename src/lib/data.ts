@@ -1,8 +1,10 @@
-import { Building, ClipboardList, TrendingUp, Warehouse } from "lucide-react";
+import { Building, ClipboardList, TrendingUp, Warehouse, Briefcase } from "lucide-react";
 import heroImage from "../../public/hero.jpg";
    import teamMeetingImage from "../../public/team-meeting.jpg";
    import propertyInvestmentImage from "../../public/property-investment.jpg";
    import constructionManagementImage from "../../public/construction-management.jpg";
+   import facilityManagerImage from "../../public/facility-manager.jpg";
+
 export const services = [
   {
     icon: Building,
@@ -19,7 +21,7 @@ export const services = [
     title: "Project Management",
     description: "Expert project management to ensure your construction project is completed on time, within budget, and to the highest standards.",
     link: "/services",
-    image: teamMeetingImage,
+    image: facilityManagerImage,
     hint: "blueprints planning",
     fullDescription: "Project management ties together in all activities on a project. A project mya be well conceived and adequately financed, the contract may be carefully drown-up, the contractors and workers highly experienced. But if all aspect of the project is not expertly integrated and managed, it may overrun the budget, fail to meet the schedule or fall short in technical quality.",
     features: ["Budget Management", "Timeline Planning", "Contractor Coordination", "Risk Assessment", "Quality Control", "Client Reporting"]
@@ -44,6 +46,16 @@ export const services = [
     fullDescription: "It involves the purchase, management and sales or retail of real estate for profit. In NETFLOW SMART HOME we have various investing options and advisors to make investment profitable particularly in the real estate. Investment properties are often purchased from a variety of sources including market listing, real estate brokers, Banks and Government entities and sale properties to make valuable profit. NETFLOW SMART HOME will help an investor to make a market analysis before selling oﬀ to obtain profit.",
     features: ["Market Analysis", "Portfolio Strategy", "Property Sourcing", "Due Diligence", "Financial Modeling", "Acquisition Support"]
   },
+  {
+    icon: Briefcase,
+    title: "Real Estate Marketing, Advisory and Consultancy",
+    description: "Expert guidance in real estate marketing, advisory, and consultancy to help you make informed decisions.",
+    link: "/services",
+    image: "https://placehold.co/600x600.png",
+    hint: "real estate consulting",
+    fullDescription: "Our advisory and consultancy services provide clients with the insights and guidance needed to navigate the complexities of the real estate market. We offer strategic advice on marketing, sales, and investment to maximize your returns.",
+    features: ["Market Research", "Marketing Strategy", "Sales Support", "Investment Analysis", "Portfolio Management", "Consultancy Services"]
+  }
 ];
 
 export const projects = [
