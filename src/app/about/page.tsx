@@ -1,14 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Eye, Gem, Target } from "lucide-react";
 import Image from "next/image";
 
 const values = [
-  "Quality Craftsmanship",
-  "Client-Centric Approach",
-  "Integrity and Honesty",
-  "Sustainable Practices",
-  "Safety First",
-  "Innovation and Technology"
+    "Integrity",
+    "Innovation",
+    "Professionalism",
+    "Excellence",
+    "Client-Centric Approach",
+    "Safety First"
+];
+
+const missionVision = [
+    {
+        icon: <Target className="h-10 w-10 text-primary" />,
+        title: "Our Mission",
+        description: "Our mission at NETFLOW SMART HOMES is to deliver exceptional services to our client Though our team of experienced professionals who process the necessary capacity and expertise required to get the job done. We strive to achieve this by delivering high-quality projects, fostering a culture of excellence and upholding the highest standard of professionalism..",
+    },
+    {
+        icon: <Eye className="h-10 w-10 text-primary" />,
+        title: "Our Vision",
+        description: "To be the most reliable and eﬃcient construction company for clients in Nigeria and beyond, recognized for our quality services and commitment to excellence.",
+    },
 ];
 
 export default function AboutPage() {
@@ -27,9 +40,8 @@ export default function AboutPage() {
             <p className="text-muted-foreground">
               For over two decades, we have been transforming visions into reality. Our journey began with a passion for building and a single goal: to deliver exceptional results that exceed our clients' expectations. Today, we continue to uphold that promise on every project, big or small.
             </p>
-            <h2 className="font-headline text-2xl font-semibold">Our Mission</h2>
-            <p className="text-muted-foreground">
-              Our mission is to build lasting relationships with our clients by providing superior construction services. We are dedicated to delivering projects on time, within budget, and to the highest standards of quality, while ensuring a safe and collaborative work environment.
+             <p className="text-muted-foreground">
+              We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery in an effective and efficient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extends to private, corporate, and government agencies. Our management expertise is supported by state-of-the-art information systems that interface to provide accurate estimating, sound and efficient project management with an effective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to ensure their successful completion.
             </p>
           </div>
           <div>
@@ -45,16 +57,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-card py-16">
+       <section id="principles" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">Our Core Values</h2>
-          <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-3">
-            {values.map((value, index) => (
-              <div key={index} className="flex items-center gap-4">
-                <CheckCircle className="h-6 w-6 flex-shrink-0 text-primary" />
-                <span className="font-medium">{value}</span>
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <div className="flex items-start gap-6">
+                 <div className="flex-shrink-0"><Gem className="h-10 w-10 text-primary" /></div>
+                 <div>
+                    <h3 className="font-headline text-xl font-bold">Our Values</h3>
+                 </div>
               </div>
-            ))}
+               <div className="mt-8 grid grid-cols-2 gap-4">
+                {values.map((value, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                    <span className="text-sm font-medium text-muted-foreground">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-8">
+              {missionVision.map((item) => (
+                <div key={item.title} className="flex items-start gap-6">
+                  <div className="flex-shrink-0">{item.icon}</div>
+                  <div>
+                    <h3 className="font-headline text-xl font-bold">{item.title}</h3>
+                    <p className="mt-2 text-muted-foreground">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

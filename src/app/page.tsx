@@ -159,7 +159,7 @@ export default function HomePage() {
               src="/team-meeting.jpg"
               alt="Construction team meeting"
               width={600}
-              height={250}
+              height={400}
               className="rounded-lg shadow-xl"
               data-ai-hint="construction team"
             />
@@ -167,7 +167,7 @@ export default function HomePage() {
           <div>
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why Choose Us?</h2>
             <p className="mt-4 text-muted-foreground">
-              We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery in an effective and efficient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extends to private, corporate, and government agencies. Our management expertise is supported by state-of-the-art information systems that interface to provide accurate estimating, sound and efficient project management with an effective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to ensure their successful completion.
+              We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery with eﬀective and eﬃcient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extend to private, corporate, and government agencies. Our management expertise is supported by state of the art information system that interface to provide accurate estimating sound and eﬃcient project management with eﬀective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to the successful completion.
             </p>
             <Button asChild size="lg" className="mt-8">
               <Link href="/about">Learn More About Us</Link>
