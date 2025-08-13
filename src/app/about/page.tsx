@@ -34,7 +34,7 @@ export default function AboutPage() {
           </div>
           <div>
             <Image
-              src="https://placehold.co/600x700"
+              src="/team-meeting.jpg"
               alt="Team of construction workers"
               width={600}
               height={700}

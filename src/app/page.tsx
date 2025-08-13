@@ -156,10 +156,10 @@ export default function HomePage() {
         <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2">
            <div>
             <Image
-              src="https://placehold.co/600x400"
+              src="/team-meeting.jpg"
               alt="Construction team meeting"
               width={600}
-              height={400}
+              height={250}
               className="rounded-lg shadow-xl"
               data-ai-hint="construction team"
             />
@@ -167,7 +167,7 @@ export default function HomePage() {
           <div>
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why Choose Us?</h2>
             <p className="mt-4 text-muted-foreground">
-              With over 20 years of experience, NETFLOW Smart Homes is a trusted name in the construction industry. Our commitment to quality, sustainability, and client satisfaction sets us apart. We use the latest technology and eco-friendly materials to create structures that are not only beautiful but also built to last.
+              We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery in an effective and efficient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extends to private, corporate, and government agencies. Our management expertise is supported by state-of-the-art information systems that interface to provide accurate estimating, sound and efficient project management with an effective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to ensure their successful completion.
             </p>
             <Button asChild size="lg" className="mt-8">
               <Link href="/about">Learn More About Us</Link>
@@ -232,7 +232,7 @@ export default function HomePage() {
                       </div>
                     </CardContent>
                   </Card>
-                </CarouselItem>
+                </CarouselItem> 
               ))}
             </CarouselContent>
             <CarouselPrevious className="left-[-50px]" />
