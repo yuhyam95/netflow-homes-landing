@@ -62,7 +62,7 @@ export default function HomePage() {
     <div className="flex flex-col">
       <section className="relative h-[80vh] min-h-[600px] w-full">
         <Image
-          src="https://placehold.co/1920x1080"
+          src="/hero.jpg"
           alt="Modern house exterior"
           layout="fill"
           objectFit="cover"
