@@ -38,7 +38,7 @@ export const services = [
     link: "/services",
     image: "https://placehold.co/600x400",
     hint: "real estate investment",
-    fullDescription: "Our property investment services are designed to help you make informed decisions and capitalize on market opportunities. We provide expert analysis, identify high-potential properties, and guide you through the acquisition process. Whether you are a seasoned investor or just starting, we can help you achieve your financial goals through real estate.",
+    fullDescription: "It involves the purchase, management and sales or retail of real estate for profit. In NETFLOW SMART HOME we have various investing options and advisors to make investment profitable particularly in the real estate. Investment properties are often purchased from a variety of sources including market listing, real estate brokers, Banks and Government entities and sale properties to make valuable profit. NETFLOW SMART HOME will help an investor to make a market analysis before selling oﬀ to obtain profit.",
     features: ["Market Analysis", "Portfolio Strategy", "Property Sourcing", "Due Diligence", "Financial Modeling", "Acquisition Support"]
   },
 ];
