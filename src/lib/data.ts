@@ -53,7 +53,7 @@ export const services = [
     link: "/services",
     image: "https://placehold.co/600x600.png",
     hint: "real estate consulting",
-    fullDescription: "Our advisory and consultancy services provide clients with the insights and guidance needed to navigate the complexities of the real estate market. We offer strategic advice on marketing, sales, and investment to maximize your returns.",
+    fullDescription: "These encompass a range of professional services to help property developers, investors, and owners navigate the complex real estate market. These services may include: Market Research and Analysis: Providing insights into market trends, demand, and supply to inform investment decisions. Property Valuation: Determining the value of properties for sale, acquisition, or financing purposes.",
     features: ["Market Research", "Marketing Strategy", "Sales Support", "Investment Analysis", "Portfolio Management", "Consultancy Services"]
   }
 ];
