@@ -124,26 +124,21 @@ export default function HomePage() {
               We offer a comprehensive range of construction services to meet the diverse needs of our clients.
             </p>
           </div>
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="relative border bg-background shadow-lg overflow-hidden">
-                  <CardHeader className="p-6 flex flex-row items-start gap-4">
+                <Card key={index} className="relative border bg-background shadow-lg overflow-hidden text-center flex flex-col items-center">
+                  <CardHeader className="p-6 flex flex-col items-center gap-4">
                     <div className="rounded-lg bg-accent p-4 shadow-md">
                       <Icon className="h-10 w-10 text-primary-foreground" />
                     </div>
-                     <div>
                       <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
-                     </div>
-                     <span className="absolute -right-4 -top-4 font-headline text-8xl font-bold text-muted/20 -z-0">
-                        0{index + 1}
-                      </span>
                   </CardHeader>
                   <CardContent className="p-6 pt-0">
                     <p className="text-muted-foreground">{service.description}</p>
                   </CardContent>
-                  <CardFooter className="p-6 pt-0">
+                  <CardFooter className="p-6 pt-0 mt-auto">
                     <Button asChild variant="link" className="text-accent hover:text-accent/80 p-0">
                       <Link href={service.link}>
                         Read More <ArrowRight className="ml-2 h-4 w-4" />

@@ -1,35 +1,45 @@
-import { Building2, Home as HomeIcon, Wrench } from "lucide-react";
+import { Building, ClipboardList, TrendingUp, Warehouse } from "lucide-react";
 
 export const services = [
   {
-    icon: HomeIcon,
-    title: "Residential Construction",
-    description: "Building custom homes with quality craftsmanship and attention to detail, tailored to your lifestyle.",
+    icon: Building,
+    title: "Construction",
+    description: "High-quality construction services for residential and commercial properties, ensuring durability and excellence.",
     link: "/services",
     image: "https://placehold.co/600x400",
-    hint: "residential construction",
-    fullDescription: "Our residential construction service focuses on creating beautiful, functional, and sustainable custom homes. We work closely with clients from the initial design phase to the final touches, ensuring every aspect of the home reflects their vision and lifestyle. Our team uses high-quality materials and innovative building techniques to deliver homes that are not only aesthetically pleasing but also durable and energy-efficient.",
-    features: ["Custom Home Design", "New Builds", "Luxury Residences", "Energy-Efficient Solutions", "Quality Materials", "Personalized Service"]
+    hint: "construction site",
+    fullDescription: "We provide top-tier construction services for a wide range of projects, from residential homes to large-scale commercial buildings. Our experienced team is committed to delivering quality craftsmanship, on-time completion, and exceptional value. We handle all aspects of the construction process, ensuring a seamless experience from start to finish.",
+    features: ["New Builds", "Renovations", "Structural Engineering", "Quality Materials", "Safety Compliance", "On-Time Delivery"]
   },
   {
-    icon: Building2,
-    title: "Commercial Projects",
-    description: "Expert solutions for commercial buildings, from office spaces to retail centers, delivered on time and on budget.",
+    icon: ClipboardList,
+    title: "Project Management",
+    description: "Expert project management to ensure your construction project is completed on time, within budget, and to the highest standards.",
     link: "/services",
     image: "https://placehold.co/600x400",
-    hint: "commercial building",
-    fullDescription: "We provide comprehensive construction services for a wide range of commercial projects, including office buildings, retail spaces, and industrial facilities. Our team has the expertise to manage projects of all sizes, ensuring they are completed on time, within budget, and to the highest standards of quality. We focus on creating spaces that are functional, sustainable, and meet the specific needs of your business.",
-    features: ["Office Buildings", "Retail Centers", "Industrial Facilities", "Project Management", "LEED Certification", "Tenant Improvements"]
+    hint: "blueprints planning",
+    fullDescription: "Our project management services provide end-to-end oversight for your construction projects. We manage timelines, budgets, contractors, and all other details to ensure a smooth and successful outcome. Our proactive approach minimizes risks and keeps you informed every step of the way.",
+    features: ["Budget Management", "Timeline Planning", "Contractor Coordination", "Risk Assessment", "Quality Control", "Client Reporting"]
   },
   {
-    icon: Wrench,
-    title: "Renovations & Remodeling",
-    description: "Transforming existing spaces with modern designs and functional upgrades for homes and businesses.",
+    icon: Warehouse,
+    title: "Facility Management",
+    description: "Comprehensive facility management services to maintain and optimize your properties for long-term value.",
     link: "/services",
     image: "https://placehold.co/600x400",
-    hint: "home renovation kitchen",
-    fullDescription: "Our renovation and remodeling services are designed to breathe new life into existing spaces. Whether you're looking to update a single room, undertake a whole-home renovation, or remodel a commercial property, our team has the skills and experience to deliver exceptional results. We combine modern design principles with quality craftsmanship to create spaces that are both beautiful and functional.",
-    features: ["Kitchen & Bath Remodels", "Home Additions", "Historic Restorations", "Basement Finishing", "Exterior Facelifts", "Commercial Remodeling"]
+    hint: "modern building maintenance",
+    fullDescription: "We offer a full suite of facility management services to ensure your properties operate efficiently and are well-maintained. From routine maintenance to emergency repairs and long-term strategic planning, our team protects your investment and enhances its value. We customize our services to meet the unique needs of each property.",
+    features: ["Preventative Maintenance", "Asset Management", "Operational Support", "Safety & Compliance", "Vendor Management", "Tenant Support"]
+  },
+  {
+    icon: TrendingUp,
+    title: "Property Investment",
+    description: "Strategic property investment advice and opportunities to help you build and grow your real estate portfolio.",
+    link: "/services",
+    image: "https://placehold.co/600x400",
+    hint: "real estate investment",
+    fullDescription: "Our property investment services are designed to help you make informed decisions and capitalize on market opportunities. We provide expert analysis, identify high-potential properties, and guide you through the acquisition process. Whether you are a seasoned investor or just starting, we can help you achieve your financial goals through real estate.",
+    features: ["Market Analysis", "Portfolio Strategy", "Property Sourcing", "Due Diligence", "Financial Modeling", "Acquisition Support"]
   },
 ];
 

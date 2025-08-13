@@ -8,7 +8,7 @@ export default function ServicesPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center">
           <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">
-            Our Construction Services
+            Our Services
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
             From initial concept to final construction, we offer a complete range of services designed to bring your vision to life with quality, integrity, and innovation.
