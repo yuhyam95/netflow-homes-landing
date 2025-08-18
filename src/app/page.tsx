@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Target, Eye, Gem, ArrowRight, MapPin, CheckCircle } from "lucide-react";
@@ -165,7 +166,7 @@ export default function HomePage() {
               src="/team-meeting.jpg"
               alt="Construction team meeting"
               width={600}
-              height={400}
+              height={350}
               className="rounded-lg shadow-xl"
               data-ai-hint="construction team"
             />
