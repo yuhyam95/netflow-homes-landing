@@ -3,7 +3,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 
 interface MapProps {
     address: string;
@@ -38,11 +38,14 @@ export default function Map({ address }: MapProps) {
                 </iframe>
             ) : (
                 <CardContent className="p-6 bg-muted/50 h-[400px] flex flex-col items-center justify-center">
-                   <p className="text-muted-foreground text-center">
-                        Google Maps API key is not configured.
-                        <br />
-                        Please add NEXT_PUBLIC_GOOGLE_MAPS_API_KEY to your environment variables.
-                    </p>
+                   <div className="text-center">
+                        <p className="text-muted-foreground">Google Maps API key is not configured.</p>
+                        <p className="text-muted-foreground mt-2">The interactive map is currently unavailable.</p>
+                        <div className="mt-4 flex items-center justify-center gap-2 text-muted-foreground">
+                            <MapPin className="h-5 w-5" />
+                            <span className="font-semibold">{address}</span>
+                        </div>
+                   </div>
                 </CardContent>
             )}
         </Card>
