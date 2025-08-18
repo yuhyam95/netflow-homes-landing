@@ -1,6 +1,8 @@
+
+"use client";
+
 import { projects } from "@/lib/data";
 import { notFound } from "next/navigation";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -8,40 +10,70 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import { MapPin } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
+import { MapPin, Search } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
+  const [selectedImage, setSelectedImage] = useState<StaticImageData | string | null>(null);
   const project = projects.find((p) => p.id.toString() === params.id);
 
   if (!project) {
     notFound();
   }
 
+  const handleImageClick = (image: StaticImageData | string) => {
+    setSelectedImage(image);
+  };
+
   return (
     <div className="bg-background py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div>
-            <Carousel className="w-full">
-              <CarouselContent>
-                {project.images.map((image, index) => (
-                  <CarouselItem key={index}>
+            <Dialog>
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {project.images.map((image, index) => (
+                     <CarouselItem key={index} className="group relative">
+                        <DialogTrigger asChild onClick={() => handleImageClick(image)}>
+                           <div className="relative aspect-[4/3] w-full cursor-pointer">
+                           <Image
+                              src={image}
+                              alt={`${project.title} image ${index + 1}`}
+                              fill
+                              className="rounded-lg object-cover shadow-lg"
+                              data-ai-hint={project.hint}
+                           />
+                           <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
+                              <Search className="h-12 w-12 text-white" />
+                           </div>
+                           </div>
+                        </DialogTrigger>
+                     </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
+              {selectedImage && (
+                <DialogContent className="max-w-4xl p-0">
                     <div className="relative aspect-[4/3] w-full">
                       <Image
-                        src={image}
-                        alt={`${project.title} image ${index + 1}`}
+                        src={selectedImage}
+                        alt="Enlarged project image"
                         fill
-                        className="rounded-lg object-cover shadow-lg"
-                        data-ai-hint={project.hint}
+                        className="object-contain"
                       />
                     </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
+                </DialogContent>
+              )}
+            </Dialog>
           </div>
           <div className="space-y-6">
             <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">
