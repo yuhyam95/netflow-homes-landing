@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/dialog";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import Map from "../Map";
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
   const [selectedImage, setSelectedImage] = useState<StaticImageData | string | null>(null);
@@ -104,6 +105,9 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
                 </div>
               </div>
             )}
+            
+            <Map address={project.Address} />
+
           </div>
         </div>
       </div>
