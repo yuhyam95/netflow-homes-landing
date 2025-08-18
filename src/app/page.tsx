@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import { featuredProjects, services } from "@/lib/data";
 import TeamSection from "@/components/TeamSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 const missionVision = [
     {
@@ -211,6 +212,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <TestimonialsSection />
       <TeamSection />
 
     </div>

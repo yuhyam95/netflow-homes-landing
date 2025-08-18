@@ -140,3 +140,34 @@ export const teamMembers = [
     bio: "Aminu Umar Sa’ad a graduate of Abubakar Tafawa Balewa University Bauchi, obtained Btech and Tech degree in Quantity Surveying. A registered member of Nigeria instituted of Quantity surveying (NIQS) and equally member of the Quantity Surveying Registration Board of Nigeria (QSRBS) Aminu Umar Sa’ad was opportuned to participated in many project both within and outside Nigeria."
   }
 ];
+
+export const testimonials = [
+  {
+    quote: "Working with NETFLOW was a game-changer. Their attention to detail and commitment to quality is unparalleled. Our project was completed on time and exceeded our expectations.",
+    name: "Mr. & Mrs. Okoro",
+    company: "Private Residence",
+    image: "https://placehold.co/100x100",
+    hint: "happy couple",
+  },
+  {
+    quote: "The professionalism and expertise of the NETFLOW team were evident from day one. They are not just builders; they are true partners in your vision.",
+    name: "Fatima Aliyu",
+    company: "Corporate Client",
+    image: "https://placehold.co/100x100",
+    hint: "business woman",
+  },
+  {
+    quote: "I was impressed by their innovative solutions and ability to handle complex construction challenges with ease. I highly recommend them for any large-scale project.",
+    name: "David Adeleke",
+    company: "Real Estate Developer",
+    image: "https://placehold.co/100x100",
+    hint: "male professional",
+  },
+   {
+    quote: "From start to finish, the communication was excellent. The team kept us informed every step of the way, making the entire process smooth and stress-free.",
+    name: "Chidinma Eze",
+    company: "Homeowner",
+    image: "https://placehold.co/100x100",
+    hint: "smiling woman",
+  }
+];
