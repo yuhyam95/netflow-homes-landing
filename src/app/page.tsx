@@ -10,9 +10,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { featuredProjects, services } from "@/lib/data";
+import { featuredProjects, services, teamMembers } from "@/lib/data";
 import TeamSection from "@/components/TeamSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const missionVision = [
     {
@@ -38,6 +39,8 @@ const values = [
 
 
 export default function HomePage() {
+  const ceo = teamMembers.find(member => member.role === "Founder & CEO");
+
   return (
     <div className="flex flex-col">
       <section className="relative h-[80vh] min-h-[600px] w-full">
@@ -211,6 +214,29 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {ceo && (
+        <section className="bg-background py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-3">
+              <div className="flex flex-col items-center text-center md:items-start md:text-left">
+                <Avatar className="h-40 w-40 border-4 border-primary">
+                  <AvatarImage src={ceo.image} alt={ceo.name} data-ai-hint={ceo.hint} />
+                  <AvatarFallback>{ceo.name.charAt(0)}</AvatarFallback>
+                </Avatar>
+                <h3 className="mt-4 font-headline text-2xl font-bold">{ceo.name}</h3>
+                <p className="font-semibold text-primary">{ceo.role}</p>
+              </div>
+              <div className="md:col-span-2">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">A Message From Our CEO</h2>
+                <blockquote className="mt-4 border-l-4 border-primary pl-4 italic text-muted-foreground">
+                  "Welcome to NETFLOW Smart Homes, where we don't just build structures; we build dreams. Our commitment is to deliver excellence and create lasting value for our clients. We are dedicated to innovation, quality, and turning your vision into a reality. Thank you for trusting us with your future."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <TestimonialsSection />
       <TeamSection />
