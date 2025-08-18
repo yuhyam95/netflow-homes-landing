@@ -1,4 +1,4 @@
-import { Building, ClipboardList, TrendingUp, Warehouse, Briefcase } from "lucide-react";
+import { Building, ClipboardList, TrendingUp, Warehouse, Briefcase, BedDouble, Sofa, Home, Building2, Bath } from "lucide-react";
 import heroImage from "../../public/hero.jpg";
    import teamMeetingImage from "../../public/team-meeting.jpg";
    import propertyInvestmentImage from "../../public/property-investment.jpg";
@@ -76,6 +76,13 @@ export const projects = [
     hint: "modern residence",
     Address: "Plot 1289, Cadastral Zone B07, Directly Behind Judges Quaters, Katampe Main Abuja",
     location: "Katampe Main, Abuja",
+    specifications: [
+      { label: "Bedrooms", value: "4", icon: BedDouble },
+      { label: "Living Rooms", value: "2", icon: Sofa },
+      { label: "BQ", value: "1", icon: Home },
+      { label: "Type", value: "Terrace Duplex", icon: Building2 },
+      { label: "Bathrooms", value: "5", icon: Bath },
+    ],
   },
   {
     id: 2,

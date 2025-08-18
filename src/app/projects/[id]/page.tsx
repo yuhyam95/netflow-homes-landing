@@ -18,6 +18,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
   const [selectedImage, setSelectedImage] = useState<StaticImageData | string | null>(null);
@@ -86,6 +87,26 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p>{project.description}</p>
             </div>
+
+            {project.specifications && (
+              <div>
+                <h2 className="font-headline text-2xl font-bold mb-4">Specifications</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  {project.specifications.map((spec) => {
+                    const Icon = spec.icon;
+                    return (
+                      <Card key={spec.label} className="bg-muted/50 p-4">
+                        <CardContent className="flex flex-col items-center justify-center gap-2 p-0 text-center">
+                          <Icon className="h-8 w-8 text-primary" />
+                          <p className="text-sm font-semibold text-muted-foreground">{spec.label}</p>
+                          <p className="font-headline text-lg font-bold">{spec.value}</p>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
             
           </div>
         </div>
