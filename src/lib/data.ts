@@ -113,7 +113,7 @@ export const teamMembers = [
     role: "Chief Architect/Project Manager",
     image: "https://placehold.co/100x100",
     hint: "female portrait",
-    bio: "An award-winning architect with a passion for innovative design and sustainable building practices. Mustapha oversees all architectural designs and project management, ensuring that every project is a masterpiece of form and function. Her work is characterized by a deep understanding of space, light, and material."
+    bio: "Mustapha a hardworking, motivated and conceptional Architect who has acquired extensive knowledge in the field of Architecture at Bsc and Msc level. Work experience which has spanned over 15yrs cut across design, supervision and project management and include working on residential, education, oﬃce and commercial buildings. Also include estate layout and fit outs. Arch. Mustapha worked with various known architectural firms includes Archit Development as project Architect, Akhimax Nig. Ltd  as chief Project Architect as in charge of production of working drawing, contract administration, site supervision, coordination of design team, BIS assessment and conducting site meetings. Arch Mustapha has competent technical skills in AutoCAD, Photoshop CS, and ArchiCAD."
   },
   {
     name: "Sanni Inuwa Baba",
