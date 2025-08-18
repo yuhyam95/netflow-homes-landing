@@ -4,6 +4,15 @@ import heroImage from "../../public/hero.jpg";
    import propertyInvestmentImage from "../../public/property-investment.jpg";
    import constructionManagementImage from "../../public/construction-management.jpg";
    import facilityManagerImage from "../../public/facility-manager.jpg";
+   import consultancyImage from "../../public/consultancy.jpg";
+   import katampeSite1 from "../../public/sites/katampe/1.jpeg";
+   import katampeSite2 from "../../public/sites/katampe/2.jpeg";
+   import katampeSite3 from "../../public/sites/katampe/3.jpeg";
+   import katampeSite4 from "../../public/sites/katampe/5.jpeg";
+   import katampeSiteFirstFloor from "../../public/sites/katampe/first-floor.png";
+   import katampeSiteSecondFloor from "../../public/sites/katampe/first-floor.png";
+   import katampeSiteGroundFloor from "../../public/sites/katampe/first-floor.png";
+   import kukwabaPlan from "../../public/sites/kukwaba/kukwaba-plan.png";
 
 export const services = [
   {
@@ -51,7 +60,7 @@ export const services = [
     title: "Real Estate Marketing, Advisory and Consultancy",
     description: "Expert guidance in real estate marketing, advisory, and consultancy to help you make informed decisions.",
     link: "/services",
-    image: "https://placehold.co/600x600.png",
+    image: consultancyImage,
     hint: "real estate consulting",
     fullDescription: "These encompass a range of professional services to help property developers, investors, and owners navigate the complex real estate market. These services may include: Market Research and Analysis: Providing insights into market trends, demand, and supply to inform investment decisions. Property Valuation: Determining the value of properties for sale, acquisition, or financing purposes.",
     features: ["Market Research", "Marketing Strategy", "Sales Support", "Investment Analysis", "Portfolio Management", "Consultancy Services"]
@@ -61,51 +70,21 @@ export const services = [
 export const projects = [
   {
     id: 1,
-    title: "Modern Lakeside Residence",
-    description: "A stunning example of modern architecture, this custom-built home features expansive glass walls, natural wood accents, and a seamless connection to the surrounding landscape.",
-    images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
+    title: "NETFLOW RESIDENCE KATAMPE",
+    description: "4 bedrooms terrace duplex with one room boys quarters and 2 living rooms.",
+    images: [katampeSite1, katampeSite2, katampeSite3, katampeSite4, katampeSiteGroundFloor, katampeSiteFirstFloor, katampeSiteSecondFloor],
     hint: "modern residence",
-    location: "Lakeview, USA",
-    price: "From $1.2M",
-    client: "The Miller Family",
-    year: "2023",
-    duration: "18 Months"
+    Address: "Plot 1289, Cadastral Zone B07, Directly Behind Judges Quaters, Katampe Main Abuja",
+    location: "Katampe Main, Abuja",
   },
   {
     id: 2,
-    title: "Downtown Office Tower",
-    description: "This commercial project involved the construction of a 20-story office building in the heart of the city. We implemented innovative, sustainable technologies to achieve a LEED Platinum certification.",
-    images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "office tower",
-    location: "Metropolis, USA",
-    price: "$35M",
-    client: "Innovate Corp.",
-    year: "2022",
-    duration: "3 Years"
-  },
-  {
-    id: 3,
-    title: "Historic Farmhouse Renovation",
-    description: "We meticulously restored and expanded a 19th-century farmhouse, preserving its historic charm while integrating modern amenities for family living.",
-    images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "historic farmhouse",
-    location: "Willow Creek, USA",
-    price: "From $850k",
-    client: "The Garcia Family",
-    year: "2023",
-    duration: "14 Months"
-  },
-   {
-    id: 4,
-    title: "Retail Complex 'The Grove'",
-    description: "A multi-unit retail complex designed to foster community and commerce, featuring unique storefronts and pedestrian-friendly walkways.",
-    images: ["https://placehold.co/1200x675", "https://placehold.co/1200x675", "https://placehold.co/1200x675"],
-    hint: "retail complex",
-    location: "Oakwood, USA",
-    price: "$12.5M",
-    client: "Commerce Group",
-    year: "2021",
-    duration: "2.5 Years"
+    title: "NETFLOW CITY KUKWABA",
+    description: "A modern development hub strategically located in Kukwaba, Abuja. It is envisioned as a vibrant smart city community that integrates technology, innovation, and sustainable living",
+    images: [kukwabaPlan],
+    hint: "modern residence",
+    Address: "Plot 891, Cadastral zone B00, Kukwaba District Abuja",
+    location: "Kukwaba, Abuja",
   },
 ];
 
