@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { projects } from "@/lib/data";
@@ -36,7 +37,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
   return (
     <div className="bg-background py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
             <Dialog>
               <Carousel className="w-full">
@@ -108,8 +109,10 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
                 </div>
               </div>
             )}
-             <Map address={project.Address} />
           </div>
+        </div>
+         <div className="mt-12">
+            <Map address={project.Address} />
         </div>
       </div>
     </div>
