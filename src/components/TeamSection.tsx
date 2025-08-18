@@ -1,26 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const teamMembers = [
-  {
-    name: "Abdullahi Ahmed Isa",
-    role: "Founder & CEO",
-    image: "https://placehold.co/100x100",
-    hint: "male portrait"
-  },
-  {
-    name: "Arc. Mustapha Abubakar mnia mcarch",
-    role: "Chief Architect/Project Manager",
-    image: "https://placehold.co/100x100",
-    hint: "female portrait"
-  },
-  {
-    name: "Sanni Inuwa Baba",
-    role: "Head, Digital Marketing and Corporate Communication",
-    image: "https://placehold.co/100x100",
-    hint: "male portrait professional"
-  },
-];
+import { teamMembers } from "@/lib/data";
 
 export default function TeamSection() {
   return (

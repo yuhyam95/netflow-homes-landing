@@ -20,7 +20,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold">Our Office</h3>
-              <p className="text-muted-foreground">123 BuildWell Ave, Suite 100<br/>Construct City, ST 12345</p>
+              <p className="text-muted-foreground">Block C4, EL-rufai Estate, APO<br/>Abuja, FCT</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -29,7 +29,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold">Email Us</h3>
-              <a href="mailto:contact@verdantbuild.com" className="text-muted-foreground hover:text-primary">contact@verdantbuild.com</a>
+              <a href="mailto:contact@verdantbuild.com" className="text-muted-foreground hover:text-primary">info@netflowhomes.com.ng</a>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -38,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold">Call Us</h3>
-              <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary">(123) 456-7890</a>
+              <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary">(+234)8068969156</a>
             </div>
           </div>
         </div>
