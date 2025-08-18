@@ -33,7 +33,7 @@ export default function ProjectsPage() {
                 </div>
               </div>
               <CardContent className="p-6 flex-grow flex flex-col gap-4">
-                  <p className="text-muted-foreground text-sm flex-grow">{project.description}</p>
+                  <p className="text-muted-foreground text-sm flex-grow font-semibold">{project.description}</p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span>{project.Address}</span>
