@@ -1,3 +1,4 @@
+
 import { Building, ClipboardList, TrendingUp, Warehouse, Briefcase, BedDouble, Sofa, Home, Building2, Bath } from "lucide-react";
 import heroImage from "../../public/hero.jpg";
    import teamMeetingImage from "../../public/team-meeting.jpg";
@@ -102,18 +103,21 @@ export const teamMembers = [
     name: "Abdullahi Ahmed Isa",
     role: "Founder & CEO",
     image: "https://placehold.co/100x100",
-    hint: "male portrait"
+    hint: "male portrait",
+    bio: "Visionary leader with over 20 years of experience in the construction industry, driving the company's growth and success."
   },
   {
     name: "Arc. Mustapha Abubakar mnia mcarch",
     role: "Chief Architect/Project Manager",
     image: "https://placehold.co/100x100",
-    hint: "female portrait"
+    hint: "female portrait",
+    bio: "Award-winning architect with a passion for innovative design and sustainable building practices."
   },
   {
     name: "Sanni Inuwa Baba",
     role: "Head, Digital Marketing and Corporate Communication",
     image: "https://placehold.co/100x100",
-    hint: "male portrait professional"
+    hint: "male portrait professional",
+    bio: "Experienced marketing professional with a knack for creating compelling brand narratives and driving engagement."
   },
 ];

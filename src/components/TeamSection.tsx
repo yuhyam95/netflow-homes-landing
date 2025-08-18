@@ -1,3 +1,4 @@
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { teamMembers } from "@/lib/data";
@@ -22,6 +23,7 @@ export default function TeamSection() {
               <CardContent>
                 <CardTitle className="font-headline text-xl">{member.name}</CardTitle>
                 <p className="text-primary">{member.role}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
               </CardContent>
             </Card>
           ))}
