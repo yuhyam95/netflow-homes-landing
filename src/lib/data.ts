@@ -130,5 +130,13 @@ export const teamMembers = [
     image: "https://placehold.co/100x100",
     hint: "male portrait professional",
     bio: `<p>Mr. Muhammad Nasir Kumo is a product of Abubakar Tafawa Balewa University, Bauchi where he obtained Bachelor Technology in Estate Management in 2007 and award winner for being the best graduating student of his set.</p><p>He started his working career as an estate assistant in June 2009 in the estate firm of Chris Agaji& Partners (Estate Surveyors & Valuers), Abuja FCT.</p><p>In February 2011, he moved to Federal Mortgage of Nigeria as a contract staﬀ where he worked as a Data Capturing staﬀ and later transfer to Loan Production department. He later resigned in 2017 to join Kizito & Partners Estate Surveyors and Valuers as Managing partner.</p><p>In the course of his employment with Kizito & Partners, Mr. Muhammad Nasir Kumo served at various times as estate surveyor, Head of various Departments and ultimately as Managing Partner of the company. Among several memorable assignments, he was previliged to be involved with while in Kizito and Partners were:</p><h4>PROPERTY/FACILITIES MANAGEMENT</h4><ul><li>National Library of Nigeria Building at Maitama District, Abuja.</li><li>Oﬀice complex occupied by Citibank in Area 7, Garki District Abuja.</li><li>CITEC Estate, Mbora District, Abuja.</li><li>Over 200 residential houses of various types in Abuja.</li></ul><h4>VALUATION:</h4><ul><li>Rating Valuation of Abuja Municipal Area Council</li><li>Condition Survey for Primary Schools in FCT</li><li>Valuation of landed properties of First Bank Plc in the North Eastern states of the country</li><li>Valuation for mortgage purpose for various banks.</li></ul><p>After 3 years of meritorious and unblemished service in Kizito & Partners, Mr. Muhammad Nasir Kumo resigned to set up his own practice, Messrs. El- Nasir sumo & Partners. He is a corporate member of Nigeria Institution of Estate Surveyors & Valuers (NIESV) and also registered with Estate Surveyors & Valuers Registration Board of Nigeria (ESVARBON). He has attended several professional training and seminars. He is happily married and blessed with children.</p>`
+  },
+  {
+    name: "Aminu Umar Sa’ad B.Tech, QS",
+    slug: "aminu-umar-saad",
+    role: "Quantity Surveyor",
+    image: "https://placehold.co/100x100",
+    hint: "male portrait professional",
+    bio: "Aminu Umar Sa’ad a graduate of Abubakar Tafawa Balewa University Bauchi, obtained Btech and Tech degree in Quantity Surveying. A registered member of Nigeria instituted of Quantity surveying (NIQS) and equally member of the Quantity Surveying Registration Board of Nigeria (QSRBS) Aminu Umar Sa’ad was opportuned to participated in many project both within and outside Nigeria."
   }
 ];
