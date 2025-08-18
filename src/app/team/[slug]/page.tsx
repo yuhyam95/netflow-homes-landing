@@ -24,9 +24,7 @@ export default function TeamMemberPage({ params }: { params: { slug: string } })
             <p className="text-xl text-accent font-semibold">{member.role}</p>
           </div>
           <div className="md:col-span-2">
-             <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p>{member.bio}</p>
-             </div>
+             <div className="prose prose-lg max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: member.bio }} />
           </div>
         </div>
       </div>
