@@ -82,10 +82,6 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">
               {project.title}
             </h1>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <MapPin className="h-5 w-5 flex-shrink-0" />
-              <span>{project.Address}</span>
-            </div>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p>{project.description}</p>
             </div>
