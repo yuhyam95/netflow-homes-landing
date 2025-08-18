@@ -171,30 +171,32 @@ export default function HomePage() {
             <CarouselContent className="-ml-4">
               {featuredProjects.map((project) => (
                 <CarouselItem key={project.id} className="pl-4 md:basis-1/2">
-                  <Card className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
-                    <div className="relative">
-                      <div className="aspect-[4/3] w-full">
-                        <Image
-                          src={project.images[0]}
-                          alt={project.title}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={project.hint}
-                        />
-                      </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                       <div className="absolute bottom-0 left-0 p-6 text-primary-foreground">
-                        <h3 className="font-headline text-2xl font-bold">{project.title}</h3>
-                      </div>
-                    </div>
-                    <CardContent className="p-6 flex-grow flex flex-col gap-4">
-                        <p className="text-muted-foreground text-sm flex-grow font-semibold">{project.description}</p>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <MapPin className="h-4 w-4 flex-shrink-0" />
-                          <span>{project.Address}</span>
+                   <Link href={`/projects/${project.id}`} className="block h-full">
+                    <Card className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col">
+                      <div className="relative">
+                        <div className="aspect-[4/3] w-full">
+                          <Image
+                            src={project.images[0]}
+                            alt={project.title}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={project.hint}
+                          />
                         </div>
-                    </CardContent>
-                  </Card>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                         <div className="absolute bottom-0 left-0 p-6 text-primary-foreground">
+                          <h3 className="font-headline text-2xl font-bold">{project.title}</h3>
+                        </div>
+                      </div>
+                      <CardContent className="p-6 flex-grow flex flex-col gap-4">
+                          <p className="text-muted-foreground text-sm flex-grow font-semibold">{project.description}</p>
+                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <MapPin className="h-4 w-4 flex-shrink-0" />
+                            <span>{project.Address}</span>
+                          </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
                 </CarouselItem> 
               ))}
             </CarouselContent>
