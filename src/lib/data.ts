@@ -121,6 +121,7 @@ export const teamMembers = [
     role: "Head, Digital Marketing and Corporate Communication",
     image: "https://placehold.co/100x100",
     hint: "male portrait professional",
-    bio: "An experienced marketing professional with a knack for creating compelling brand narratives and driving engagement. Sanni leads all marketing efforts, from digital campaigns to corporate communications, ensuring that NETFLOW's story reaches and resonates with the right audience. He is dedicated to building a strong brand identity and fostering client relationships."
+    bio: "Sanni Inuwa Baba is a distinguished Computer Scientist and strategist, holding qualifications from Coventry University coupled with a first-class degree in Business Administration and a rich professional background spanning over 12 years. He has served as a strategy and communication expert for the Financial System Strategy 2020 initiative of the Central Bank of Nigeria. Beyond his role in the public sector, Sanni has made significant strides in the private sector as a communication expert and entrepreneur. He has demonstrated remarkable leadership by founding companies and co-founding two others, solidifying his presence and impact within the business community. In recognition of his expertise and contribution to holistic living, Sanni serves as an honorary advisor to the Sandhya Maarga Institute of Holistic Living in Malaysia, where he continues to share his insight and promote wellness on a global scale."
   },
 ];
+
