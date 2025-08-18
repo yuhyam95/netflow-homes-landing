@@ -101,23 +101,26 @@ export const featuredProjects = projects.slice(0, 3);
 export const teamMembers = [
   {
     name: "Abdullahi Ahmed Isa",
+    slug: "abdullahi-ahmed-isa",
     role: "Founder & CEO",
     image: "https://placehold.co/100x100",
     hint: "male portrait",
-    bio: "Visionary leader with over 20 years of experience in the construction industry, driving the company's growth and success."
+    bio: "Visionary leader with over 20 years of experience in the construction industry, driving the company's growth and success. Abdullahi is passionate about building sustainable communities and leveraging technology to create smarter, more efficient homes. His leadership has been instrumental in establishing NETFLOW as a trusted name in the real estate sector."
   },
   {
     name: "Arc. Mustapha Abubakar mnia mcarch",
+    slug: "arc-mustapha-abubakar",
     role: "Chief Architect/Project Manager",
     image: "https://placehold.co/100x100",
     hint: "female portrait",
-    bio: "Award-winning architect with a passion for innovative design and sustainable building practices."
+    bio: "An award-winning architect with a passion for innovative design and sustainable building practices. Mustapha oversees all architectural designs and project management, ensuring that every project is a masterpiece of form and function. Her work is characterized by a deep understanding of space, light, and material."
   },
   {
     name: "Sanni Inuwa Baba",
+    slug: "sanni-inuwa-baba",
     role: "Head, Digital Marketing and Corporate Communication",
     image: "https://placehold.co/100x100",
     hint: "male portrait professional",
-    bio: "Experienced marketing professional with a knack for creating compelling brand narratives and driving engagement."
+    bio: "An experienced marketing professional with a knack for creating compelling brand narratives and driving engagement. Sanni leads all marketing efforts, from digital campaigns to corporate communications, ensuring that NETFLOW's story reaches and resonates with the right audience. He is dedicated to building a strong brand identity and fostering client relationships."
   },
 ];
