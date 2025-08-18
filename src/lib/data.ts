@@ -112,7 +112,7 @@ export const teamMembers = [
     slug: "arc-mustapha-abubakar",
     role: "Chief Architect/Project Manager",
     image: "https://placehold.co/100x100",
-    hint: "female portrait",
+    hint: "male potrait",
     bio: "Mustapha a hardworking, motivated and conceptional Architect who has acquired extensive knowledge in the field of Architecture at Bsc and Msc level. Work experience which has spanned over 15yrs cut across design, supervision and project management and include working on residential, education, oﬃce and commercial buildings. Also include estate layout and fit outs. Arch. Mustapha worked with various known architectural firms includes Archit Development as project Architect, Akhimax Nig. Ltd  as chief Project Architect as in charge of production of working drawing, contract administration, site supervision, coordination of design team, BIS assessment and conducting site meetings. Arch Mustapha has competent technical skills in AutoCAD, Photoshop CS, and ArchiCAD."
   },
   {
@@ -123,5 +123,12 @@ export const teamMembers = [
     hint: "male portrait professional",
     bio: "Sanni Inuwa Baba is a distinguished Computer Scientist and strategist, holding qualifications from Coventry University coupled with a first-class degree in Business Administration and a rich professional background spanning over 12 years. He has served as a strategy and communication expert for the Financial System Strategy 2020 initiative of the Central Bank of Nigeria. Beyond his role in the public sector, Sanni has made significant strides in the private sector as a communication expert and entrepreneur. He has demonstrated remarkable leadership by founding companies and co-founding two others, solidifying his presence and impact within the business community. In recognition of his expertise and contribution to holistic living, Sanni serves as an honorary advisor to the Sandhya Maarga Institute of Holistic Living in Malaysia, where he continues to share his insight and promote wellness on a global scale."
   },
+  {
+    name: "Muhammad Nasir Kumo anivs, osv",
+    slug: "muhammad-nasir-kumo",
+    role: "Head, Facility Management/ Estate Valuer",
+    image: "https://placehold.co/100x100",
+    hint: "male portrait professional",
+    bio: "Mr. Muhammad Nasir Kumo is a product of Abubakar Tafawa Balewa University, Bauchi where he obtained Bachelor Technology in Estate Management in 2007 and award winner for being the best graduating student of his set. He started his working career as an estate assistant in June 2009 in the estate firm of Chris Agaji& Partners (Estate Surveyors & Valuers), Abuja FCT. In February 2011, he moved to Federal Mortgage of Nigeria as a contract staﬀ where he worked as a Data Capturing staﬀ and later transfer to Loan Production department. He later resigned in 2017 to join Kizito & Partners Estate Surveyors and Valuers as Managing partner. In the course of his employment with Kizito & Partners, Mr. Muhammad Nasir Kumo served at various times as estate surveyor, Head of various Departments and ultimately as Managing Partner of the company. Among several memorable assignments, he was previliged to be involved with while in Kizito and Partners were: PROPERTY/FACILITIES MANAGEMENT • National Library of Nigeria Building at Maitama District, Abuja. • Oﬀice complex occupied by Citibank in Area 7, Garki District Abuja. • CITEC Estate, Mbora District, Abuja. • Over 200 residential houses of various types in Abuja. VALUATION: • Rating Valuation of Abuja Municipal Area Council • Condition Survey for Primary Schools in FCT • Valuation of landed properties of First Bank Plc in the North Eastern states of the country • Valuation for mortgage purpose for various banks. After 3 years of meritorious and unblemished service in Kizito & Partners, Mr. Muhammad Nasir Kumo resigned to set up his own practice, Messrs. El- Nasir sumo & Partners. He is a corporate member of Nigeria Institution of Estate Surveyors & Valuers (NIESV) and also registered with Estate Surveyors & Valuers Registration Board of Nigeria (ESVARBON). He has attended several professional training and seminars. He is happily married and blessed with children."
+  }
 ];
-
