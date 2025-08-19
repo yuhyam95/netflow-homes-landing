@@ -8,7 +8,7 @@ export default function TeamSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">Meet Our Team</h2>
+        <h2 className="text-center font-headline text-3xl font-bold md:text-4xl text-primary">Meet Our Team</h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
           The dedicated professionals behind our success.
         </p>

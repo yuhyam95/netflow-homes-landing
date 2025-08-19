@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
     <section className="bg-background py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="font-headline text-3xl font-bold md:text-4xl">
+          <h2 className="font-headline text-3xl font-bold md:text-4xl text-primary">
             What Our Clients Say
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">

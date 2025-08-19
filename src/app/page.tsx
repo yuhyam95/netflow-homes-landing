@@ -60,7 +60,7 @@ export default function HomePage() {
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
             NETFLOW Smart Homes brings your architectural dreams to life with precision, passion, and professionalism.
           </p>
-          <Button asChild size="lg" className="mt-8">
+          <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
             <Link href="/contact">Get a Quote</Link>
           </Button>
         </div>
@@ -103,7 +103,7 @@ export default function HomePage() {
       <section id="services" className="w-full bg-card py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Services</h2>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl text-primary">Our Services</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               We offer a comprehensive range of construction services to meet the diverse needs of our clients.
             </p>
@@ -141,7 +141,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-3">
               <div className="md:col-span-2">
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">A Message From Our CEO</h2>
+                <h2 className="font-headline text-3xl font-bold md:text-4xl text-primary">A Message From Our CEO</h2>
                 <blockquote className="mt-4 border-l-4 border-primary pl-6 italic text-muted-foreground text-lg">
                   "Welcome to NETFLOW Smart Homes, where we don't just build structures; we build dreams. Our commitment is to deliver excellence and create lasting value for our clients. We are dedicated to innovation, quality, and turning your vision into a reality. Thank you for trusting us with your future."
                 </blockquote>
@@ -172,7 +172,7 @@ export default function HomePage() {
             />
           </div>
           <div>
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">Why Choose Us?</h2>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl text-primary">Why Choose Us?</h2>
             <p className="mt-4 text-muted-foreground">
               We are a team of seasoned professionals driven with zeal and motivated with passion and quality services delivery with eﬀective and eﬃcient manner within a reasonable cost, quality and time. The firm is based in Abuja with a client range that extend to private, corporate, and government agencies. Our management expertise is supported by state of the art information system that interface to provide accurate estimating sound and eﬃcient project management with eﬀective cost control mechanism. We are well known for our proactive and innovative approaches to the challenges that inevitably arise during major construction projects to the successful completion.
             </p>
@@ -186,7 +186,7 @@ export default function HomePage() {
       <section id="projects" className="w-full bg-muted/40 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">Featured Projects</h2>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl text-primary">Featured Projects</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               A glimpse into our portfolio of successfully completed projects.
             </p>
