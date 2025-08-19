@@ -60,7 +60,7 @@ export default function HomePage() {
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
             NETFLOW Smart Homes brings your architectural dreams to life with precision, passion, and professionalism.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild size="lg" className="mt-8">
             <Link href="/contact">Get a Quote</Link>
           </Button>
         </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
               return (
                 <Card key={index} className="relative border bg-background shadow-lg overflow-hidden text-center flex flex-col items-center">
                   <CardHeader className="p-6 flex flex-col items-center gap-4">
-                    <div className="rounded-lg bg-accent p-4 shadow-md">
+                    <div className="rounded-lg bg-primary p-4 shadow-md">
                       <Icon className="h-10 w-10 text-primary-foreground" />
                     </div>
                       <CardTitle className="font-headline text-xl font-bold">{service.title}</CardTitle>
@@ -123,7 +123,7 @@ export default function HomePage() {
                     <p className="text-muted-foreground">{service.description}</p>
                   </CardContent>
                   <CardFooter className="p-6 pt-0 mt-auto">
-                    <Button asChild variant="link" className="text-accent hover:text-accent/80 p-0">
+                    <Button asChild variant="link" className="text-primary hover:text-primary/80 p-0">
                       <Link href={service.link}>
                         Read More <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
