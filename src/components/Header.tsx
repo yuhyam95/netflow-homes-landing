@@ -57,7 +57,7 @@ export default function Header() {
           <SheetContent side="left">
             <div className="flex h-full flex-col">
               <div className="border-b p-4">
-                <Link href="/" className="flex items-center gap-2 font-bold">
+                <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
                    <Logo className="h-10" />
                 </Link>
               </div>
