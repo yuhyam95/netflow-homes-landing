@@ -108,12 +108,12 @@ export const teamMembers = [
     bio: "Abdullahi Ahmed Isa is an astute financial strategist and a project manager. Having served in the Central Bank of Nigeria under Financial System Strategy program for over 13 years and being involved in the strategic process of putting Nigeria among the top 20 economies by transforming the nation's financial landscape through the implementation of well conceptualized transformational initiatives. Abdullahi Ahmed Isa is also an experienced entrepreneur with a demonstrated history of working in the Real Estate industry. A strong visionary whose strength lies in the business development, team building, financial strategy and projection. Ahmed Isa is a firm believer in the integration of technology in the real estate and has led multi-billion Naira sales initiatives. He drives pleasure in engaging and energizing the team leading everyone towards achieving the organizational vision. He holds B.Tech, (Applied Geology), HND (Business Management), Bsc (Banking and Finance) and MBA(General Management) both from Abubakar Tafawa Balewa University Bauchi and Nasarawa State Keﬃ. He is also a certified project manager, strategist and seasoned administrator at various capacity. A member of various professional bodies including Institute of Professional Managers and Administrators of Nigeria, Nigeria Institute of Management, Institute of Debt Recovery Practitioners of Nigeria and Global institute of Project Management Africa."
   },
   {
-    name: "Mohammed Idris",
-    slug: "mohammed-idris",
-    role: "Executive Director, Finance & Admin",
+    name: "Mohammed Idris Ibrahim",
+    slug: "mohammed-idris-ibrahim",
+    role: "Executive Director Projects/ Chief Operating Officer",
     image: "https://placehold.co/100x100",
-    hint: "male potrait",
-    bio: ""
+    hint: "male portrait",
+    bio: "Mohammed is a distinguished computer scientist with the expertise in web development, Project Manager, Entrepreneurship, building design remodeling and interior decoration, hold an International Diploma in Computing from Informatic Institute Kazaure, BSc in Business Information System from Middlesex University Dubai. Mohammed Idris participated in delivering the complex projects in the Nigerian construction industry with over 7 years working experience in the real estate sector."
   },
   {
     name: "Sanni Inuwa Baba",
