@@ -232,7 +232,7 @@ export default function HomePage() {
             <CarouselNext className="right-[-50px]" />
           </Carousel>
            <div className="mt-8 text-center">
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg">
               <Link href="/projects">View All Projects</Link>
             </Button>
           </div>

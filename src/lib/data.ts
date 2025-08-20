@@ -72,7 +72,7 @@ export const projects = [
   {
     id: 1,
     title: "NETFLOW RESIDENCE KATAMPE",
-    description: "4 bedrooms terrace duplex with one room boys quarters and 2 living rooms.",
+    description: "The company is building Five (5) units of Four (4) Bedrooms Terrace Duplex with Two (2) Living room and One (1) Room Boys Quarters",
     images: [katampeSite1, katampeSite2, katampeSite3, katampeSite4, katampeSiteGroundFloor, katampeSiteFirstFloor, katampeSiteSecondFloor],
     hint: "modern residence",
     Address: "Plot 1289, Cadastral Zone B07, Directly Behind Judges Quaters, Katampe Main Abuja",
